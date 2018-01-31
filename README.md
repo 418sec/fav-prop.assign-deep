@@ -47,7 +47,7 @@ assignDeep({ a: 1, b: { c: 1, d: 1 } }, { b: { c: 2, e: 2 }, f: 2 });
 Copys all enumerable own properties deeply from one or more source objects to a destination object and returns a destination object.
 This function copys not only child properties but also descendants properties of source objects.
 
-***NOTE:*** *This function copys enumerable own properties of srcs objects (top level objects) like `Object.assign`, but copys properties of property objects (lower level objects) like primitive properties when those properties are not plain objects.
+***NOTE:*** *This function copys enumerable own properties of srcs objects (top level objects) like `Object.assign`, but copys properties of child and descendant objects (lower level objects) like primitive properties when those properties are not plain objects.
 For example:*
 
 ```
