@@ -4,7 +4,7 @@
 var isPlainObject = require('@fav/type.is-plain-object');
 var enumOwnProps = require('@fav/prop.enum-own-props');
 
-function assignDeep(dest /* , src, ... */) {
+function assignDeep(dest /* , ...src */) {
   if (!isPlainObject(dest)) {
     dest = {};
   }

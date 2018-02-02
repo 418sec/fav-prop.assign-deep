@@ -209,7 +209,7 @@ describe('fav.prop.assignDeep', function() {
 
     expect(dest).to.deep.equal({});
 
-    // The properties of top level non plan object is copied as a plain object
+    // The properties of top level non plain object is copied as a plain object
     expect(dest).to.not.equal(src);
     expect(Object.getOwnPropertySymbols(dest)).to.deep.equal([sym00]);
     expect(dest[sym01]).to.be.undefined;
