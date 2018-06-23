@@ -1,6 +1,6 @@
 {
   "name": "@fav/prop.assign-deep",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Copys enumerable own properties of child and descendants of source objects to destination object.",
   "main": "index.js",
   "files": [
