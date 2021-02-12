@@ -16,6 +16,9 @@ function assignDeep(dest /* , ...src */) {
 
 function assignDeepEach(dest, src) {
   var props = enumOwnProps(src);
+  if(props.includes('__proto__') || props.includes('constructor') || props.includes('prototype')){
+    return false;
+  }
   for (var i = 0, n = props.length; i < n; i++) {
     var prop = props[i];
     var srcValue = src[prop];
